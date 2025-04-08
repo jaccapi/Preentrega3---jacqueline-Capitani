@@ -1,4 +1,29 @@
-$primary-color: #3498db;
+$primary-color: #34db74;
+
+@import url(_nav.scss);
 
 /* anidamiento */
 
+h2{
+    background-color:rgb(248, 247, 247);
+  
+}
+
+
+// Definición de un mixin con parámetros
+
+@mixin button-styles($padding, $border-radius, $bg-color) {
+    padding: $padding;
+    border-radius: $border-radius;
+    color: white;
+    background-color: $bg-color;
+  }
+  
+  // Uso del mixin en clases
+  .primary-button {
+    @include button-styles(10px 20px, 5px, blue);
+  }
+  
+  .secondary-button {
+    @include button-styles(10px 20px, 5px, gray);
+  }
