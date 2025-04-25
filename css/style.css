@@ -1,4 +1,7 @@
-@import url(_nav.scss);
+nav {
+  background-color: rgb(218, 207, 207);
+}
+
 /* anidamiento */
 h2 {
   background-color: rgb(248, 247, 247);
